@@ -739,6 +739,12 @@ textarea:focus {
 
 
 @media(max-width: 811px) {
+         nav #menu li a {
+           
+            text-decoration: none;
+            font-size: 18px;
+      }
+      
       .image {
             background: url(ipad.jpg) no-repeat 50% 70%;
             margin-left: auto;
@@ -774,8 +780,9 @@ margin-bottom: 75px;
       }
 
       img{
-            width: 100px;
-            height: 35px;
+            margin-top:3.8px;
+            width: 110px;
+            height: 40px;
       }
 }
 
