@@ -799,9 +799,10 @@ margin-bottom: 75px;
       width:320px;
       }
 
-      img{
-            width: 100px;
-            height: 35px;
+     img{
+           
+            width: 112px;
+            height: 42px;
       }
 
       body{
@@ -810,9 +811,8 @@ margin-bottom: 75px;
       }
 
       .hero-content p {
-            
              font-size:14px;
-            
+            font-weight: 700;
            line-height: 23px;
             text-align:left;
             
@@ -822,14 +822,18 @@ margin-bottom: 75px;
 
       h3.wow.fadeInUp{
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 700;
             letter-spacing: 1.4px;
             margin-top: -15px;
             
       }
-      nav {
-            font-size: 20px;
+       nav {
+           
+            margin:auto;
+            
+            font-size: 22px;
       }
+          
             
 
       
