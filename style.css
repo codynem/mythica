@@ -1,3 +1,14 @@
+/*@font-face {
+      font-family:"Note_this";
+      src: url("Note_this.ttf") format("truetype");
+    }*/
+
+    @font-face{
+      font-family: "Note_this";
+      src: url("Note_this.ttf") format("truetype");
+    }
+
+   
 
 /*--------------- basic styling --------------- */
 html, body {
@@ -6,11 +17,21 @@ html, body {
       width: 100%;
       height: 100%;
       /*font-family: "Roboto Mono" !important;*/
-
-      font-family: 'Josefin Sans', sans-serif;
+      letter-spacing: 1px;
+      font-family: "Note_this";
+      font-size:18px;
       background: #ffffff; !important;
       color: black; !important;
+     
 }
+
+
+.container{
+      margin-right:10%;
+      margin-left:10%;
+      
+}
+
 
 .whitespace {
       width: 100%;
@@ -82,29 +103,44 @@ html, body {
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
-      /*background-image: linear-gradient(to right, #322D33, #BC89C6);*/
+     
+    
+  
+ 
+       top:0;
+    
       background:#ffffff;
     
       height: 80px;
       position: fixed;
+      
       z-index: 1;
       
 }
 
 nav #brand {
       float: left;
-      display: block;
+      margin-top: 17px;
       margin-left: 82px;
-      line-height: 80px;
-      font-weight: 300;
-      font-size:26px;
+      position:fixed;
+   
       
       
 }
 
-nav #brand a {
-      color: black;
-      transition: all 0.3s ease-out;
+
+
+#bottom img{
+      width: 50px;
+      height: 58px;
+     display: block;
+     margin-left:auto;
+     margin-right:auto;
+}
+
+img{
+      width: 145px;
+      height: 50px;
 }
 
 nav #brand a:hover {
@@ -122,18 +158,20 @@ nav #menu li {
       display: inline-block;
       cursor: pointer;
       font-weight: 300;
-      line-height: 80px;
+      line-height: 55px;
       position: relative;
       transition: all 0.3s ease-out;
+      font-size: 22px;
+      letter-spacing: 1.4px;
+     
     
 }
 
-nav #menu li span {
-      font-weight: 700;
-}
+
 
 nav #menu li a {
       color: black;
+      text-decoration: none;
 }
 
 nav #menu li a:hover {
@@ -218,11 +256,13 @@ nav #menu li a:hover {
 h3.wow.fadeInUp{
       font-size: 22px;
       font-weight: 400;
+      letter-spacing: 1.4px;
+     
+     
+      
 }
 
-.h3{
-      font-family: "Roboto Mono" !important;
-}
+
 
 @media(max-width: 768px) {
       #toggle {
@@ -267,8 +307,8 @@ h3.wow.fadeInUp{
 .hero h1 {
       font-weight: lighter;
       text-align: center;
-      letter-spacing: -2px;
-      line-height: 58px;
+      letter-spacing: 0.5px;
+      line-height: 33px;
 }
 
 @media(max-width: 768px) {
@@ -441,8 +481,8 @@ h6 {
 
 .info li {
       font-weight: lighter;
-      color: #fff;
-      font-size: 18px;
+      color: black;
+      font-size: 22px;
       padding-left: 20px;
 }
 
@@ -489,6 +529,8 @@ h6 {
       background: #c4302b;
 }
 
+
+
 #media, #address {
       text-align: right;
 }
@@ -515,13 +557,20 @@ h6 {
 /*--------------- work page --------------- */
 
 .hero-content {
-      margin-left: 0%;
+      margin-left: 50px;
+      margin-right:50px;
+      margin-top:50px;
+      
 }
 
 .hero-content p {
       font-weight: 300;
-      line-height: 36px;
+      line-height: 33px;
       color:black;
+      text-indent: 50px;
+      letter-spacing: 1.7px;
+      
+      
 }
 
 .hero-content h6 {
@@ -539,13 +588,42 @@ h6 {
 /*---------------about page --------------- */
 
 .about {
-      height: 600px;
-      margin-top: 120px;
+      height: 565px;
+      width:1024px;
+      margin-left: auto;
+  margin-right: auto;
+  right: 80px;
+      margin-top: 100px;
+      margin-bottom:-25px;
+      
 }
 
 .image {
-      background: url(Mythicasanctuary.jpg) no-repeat 50% 70%;
+      background: url(res.jpeg) no-repeat 50% 70%;
+      box-shadow: 5px 10px 18px grey;
+      margin-top: 150px;
+     
+      
 }
+
+.sanc{
+      background: url(sanc.jpg) no-repeat 50% 70%;
+      box-shadow: 5px 10px 18px grey;
+      margin-top: 150px;
+}
+
+.img2 {
+      background: url(trya6.png);
+      margin-left: auto;
+      margin-right: auto;
+     
+     
+      
+}
+
+
+
+
 
 /*--------------- contact form --------------- */
 
@@ -635,18 +713,115 @@ textarea:focus {
 }
 
 
+
+
+
+
+
+
+@media(max-width: 1024px) {
+
+      .image {
+            background: url(padpro.jpeg) no-repeat 50% 70%;
+            margin-left: auto;
+            margin-right: auto;
+            
+      }
+      .about {
+            margin-top: 200px;
+            max-width:800px;
+            height:440px;
+            
+    
+      }
+
+}
+
+
 @media(max-width: 768px) {
       .image {
             background: url(myth2.jpg) no-repeat 50% 70%;
-            margin-top:-20px;
-            margin-bottom:-60px;
+            margin-left: auto;
+            margin-right: auto;
+      }
+
+      h3.wow.fadeInUp{
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            margin-top: auto;
+            margin-bottom: auto;
+          
+            
+      }
+
+      .hero-content{
+
+margin-bottom: 75px;
+
+      }
+
+     
+      .about {
+            margin-top: 100px;
+            height: 350px;
+      width:600px;
+
+      }
+
+      body{
+            font-size: 14px;
+      }
+
+      img{
+            width: 100px;
+            height: 35px;
       }
 }
 
-@media(max-width: 415px) {
+@media(max-width: 414px) {
       .image {
             background: url(myth3.jpg) no-repeat 50% 70%;
-            margin-top:-50px;
-            margin-bottom:-80px;
+            margin-left: auto;
+            margin-right: auto;
       }
+
+      .about {
+            margin-top: 90px;
+            height: 350px;
+      width:320px;
+      }
+
+      img{
+            width: 100px;
+            height: 35px;
+      }
+
+      body{
+            font-size: 10px;
+           
+      }
+
+      .hero-content p {
+            
+           line-height: 20px;
+            text-align:left;
+            
+      }
+
+    
+
+      h3.wow.fadeInUp{
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            margin-top: -15px;
+            
+      }
+      nav {
+            font-size: 16px;
+      }
+            
+
+      
 }
