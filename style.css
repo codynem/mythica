@@ -738,7 +738,7 @@ textarea:focus {
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 811px) {
       .image {
             background: url(myth2.jpg) no-repeat 50% 70%;
             margin-left: auto;
