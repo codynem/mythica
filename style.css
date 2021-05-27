@@ -1,13 +1,11 @@
-/*@font-face {
+@font-face {
       font-family:"Note_this";
-      src: url("Note_this.ttf") format("truetype");
-    }*/
-
-    @font-face{
-      font-family: "Note_this";
       src: url("Note_this.ttf") format("truetype");
     }
 
+   
+
+   
    
 
 /*--------------- basic styling --------------- */
@@ -16,6 +14,7 @@ html, body {
       padding: 0;
       width: 100%;
       height: 100%;
+      
       /*font-family: "Roboto Mono" !important;*/
       letter-spacing: 1px;
       font-family: "Note_this";
@@ -104,14 +103,14 @@ html, body {
 nav {
       width: 100%;
      
-    
+  
   
  
-       top:0;
+      
     
       background:#ffffff;
     
-      height: 80px;
+      height: 100px;
       position: fixed;
       
       z-index: 1;
@@ -123,9 +122,9 @@ nav #brand {
       margin-top: 17px;
       margin-left: 82px;
       position:fixed;
-   
-      
-      
+      font-size:28px;
+      font-weight:500;
+     
 }
 
 
@@ -139,8 +138,8 @@ nav #brand {
 }
 
 img{
-     width: 240px;
-      height: 65px;
+      width: 180px;
+      height: 55px;
 }
 
 nav #brand a:hover {
@@ -151,6 +150,8 @@ nav #menu {
       float: left;
       right: 80px;
       position: fixed;
+    
+      
 }
 
 nav #menu li {
@@ -161,9 +162,12 @@ nav #menu li {
       line-height: 55px;
       position: relative;
       transition: all 0.3s ease-out;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin-top:11px;
+      font-size: 20px;
+      letter-spacing: 2.5px;
+      margin-top: 7px;
+      margin-bottom:20px;
+      
+      
      
     
 }
@@ -202,22 +206,25 @@ nav #menu li a:hover {
       cursor: pointer;
       top: -2px;
       line-height: 80px;
+      font-size: 14px;
+      margin-top:12px;
 }
 
 #resize {
       z-index: 1;
       top: 0px;
       position: fixed;
-      background: #0f0f0f;
+      background:#ffffff;
       width: 100%;
       height: 100%;
       visibility: hidden;
       opacity: 0;
       transition: all 1s ease-out;
+     
 }
 
 #resize #menu {
-      height: 90px;
+      height: 120px;
       position: absolute;
       left: 45%;
       transform: translateX(-40%);
@@ -225,6 +232,7 @@ nav #menu li a:hover {
       display: table-cell;
       vertical-align: center;
 }
+
 
 #resize #menu li {
       display: block;
@@ -242,7 +250,8 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-      color: #fff;
+      color:black;
+      text-decoration: none;
 }
 
 #resize #menu li a:hover {
@@ -602,7 +611,7 @@ h6 {
 .image {
       background: url(sketch.jpg) no-repeat 50% 70%;
       box-shadow: 5px 10px 18px grey;
-      margin-top: 150px;
+      margin-top: 70px;
      
       
 }
@@ -610,7 +619,8 @@ h6 {
 .sanc{
       background: url(sanc.jpg) no-repeat 50% 70%;
       box-shadow: 5px 10px 18px grey;
-      margin-top: 150px;
+      margin-top: 70px;
+      
 }
 
 .img2 {
@@ -741,21 +751,65 @@ textarea:focus {
 
 @media(max-width: 810px) {
 
+
+
+      nav {
+            margin-bottom: -2000px;
+      }
+      nav #brand {
+           
+            margin-top: 24px;
+         
+      }
+
+
+
+
       nav #menu li a {
             color: black;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 14px;
+            padding-left: -100px;
+      
       }
 
+
+
+nav #menu li {
+      
+      
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 55px;
+     position: relative;
+      transition: all 0.3s ease-out;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      padding: 5px;
+    
+
+}
 
       .image {
             background: url(ipad.jpg) no-repeat 50% 70%;
+            margin-top: inherit;
             margin-left: auto;
             margin-right: auto;
+          
+            
+           
+      }
+
+      .sanc{
+            background: url(sancsmol.jpg) no-repeat 50% 70%;
+            margin-top: inherit;
+            margin-left: auto;
+            margin-right: auto;
+
       }
 
       h3.wow.fadeInUp{
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 400;
             letter-spacing: 1.4px;
             margin-top: auto;
@@ -779,7 +833,7 @@ margin-bottom: 75px;
       }
 
       body{
-            font-size: 14px;
+            font-size: 12px;
       }
 
       img{
@@ -787,15 +841,31 @@ margin-bottom: 75px;
             width: 110px;
             height: 40px;
       }
+
+
+      #bottom img{
+            width: 30px;
+            height: 35px;
+           display: block;
+           margin-left:auto;
+           margin-right:auto;
+      }
+      
 }
 
 
 
 @media(max-width: 414px) {
+
+
+      nav{
+            margin-bottom: 100px;
+      }
       .image {
             background: url(myth3.jpg) no-repeat 50% 70%;
             margin-left: auto;
             margin-right: auto;
+            margin-top:1000px;
       }
 
       .about {
@@ -804,7 +874,7 @@ margin-bottom: 75px;
       width:320px;
       }
 
-     img{
+      img{
            
             width: 112px;
             height: 42px;
@@ -812,6 +882,7 @@ margin-bottom: 75px;
 
       body{
             font-size: 10px;
+            font-weight: 700;
            
       }
 
@@ -832,14 +903,17 @@ margin-bottom: 75px;
             margin-top: -15px;
             
       }
-       nav {
+      nav {
            
             margin:auto;
             
             font-size: 22px;
       }
-          
-            
-
       
+
+  #toggle{
+        font-size:14px;
+        margin-top:22px;
+  }
+
 }
