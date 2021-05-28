@@ -788,7 +788,7 @@ textarea:focus {
       nav #menu li a {
             color: black;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             padding-left: -100px;
       
       }
@@ -846,6 +846,7 @@ margin-bottom: 75px;
       }
       .hero-content p {
 line-height:20px;
+font-size:14px;
       }
             
 
